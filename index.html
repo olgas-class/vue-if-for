@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <h1 v-if="awesome">Vue is awesome</h1>
+      <p v-else>Oh no :(</p>
+
+      <hr />
+      <div v-if="myNumber > 0">
+        <p>Il numero è positivo</p>
+      </div>
+      <p v-else-if="myNumber === 0">Il numero è 0</p>
+      <div v-else>
+        <p>Il numero è negativo</p>
+      </div>
+
+      <hr />
+      <h2>V-SHOW</h2>
+
+      <p v-show="awesome">Vue is awesome</p>
+
+      <hr />
+
+      <h2>FOR IN ARRAY</h2>
+      <ul v-if="names.length > 0">
+        <li v-for="(name, index) in names">num.{{ index }} {{ name }}</li>
+      </ul>
+
+      <hr />
+      <h2>FOR IN OBJECT</h2>
+      <div>
+        <p v-for="(value, key) in student">{{ key }} ->  {{ value }}</p>
+      </div>
+
+      <hr>
+      <h2>FOR IN NUMBER</h2>
+      <div>
+        <p v-for="num in 5">{{ num }}</p>
+      </div> -->
+
+      <h2>FOR IN ARRAY OF OBJECTS</h2>
+      <ul>
+        <li v-for="student in studentsArray">
+          <h4>{{ student.name }} {{ student.lastname }}</h4>
+          <p>Età: {{ student.age }}</p>
+        </li>
+      </ul>
+
+      <hr />
+      <h2>Stampare uno studente con indice 1 dall'array</h2>
+      <div>
+        <h4>{{ studentsArray[activeIndex].name }} {{ studentsArray[activeIndex].lastname }}</h4>
+        <p>Età: {{ studentsArray[activeIndex].age }}</p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
